@@ -1,0 +1,121 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "DateEntry",
+        "importPath": "tkcalendar",
+        "description": "tkcalendar",
+        "isExtraImport": true,
+        "detail": "tkcalendar",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "ScrolledText",
+        "importPath": "tkinter.scrolledtext",
+        "description": "tkinter.scrolledtext",
+        "isExtraImport": true,
+        "detail": "tkinter.scrolledtext",
+        "documentation": {}
+    },
+    {
+        "label": "tabulate",
+        "importPath": "tabulate",
+        "description": "tabulate",
+        "isExtraImport": true,
+        "detail": "tabulate",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntry",
+        "kind": 6,
+        "importPath": "OT time-calculate",
+        "description": "OT time-calculate",
+        "peekOfCode": "class TimeEntry(ttk.Frame):\n    \"\"\"Custom time entry widget with hour, minute, and AM/PM selection\"\"\"\n    def __init__(self, parent, *args, default_ampm=\"AM\", **kwargs):\n        super().__init__(parent, *args, **kwargs)\n        self.hour_var = tk.StringVar()\n        self.minute_var = tk.StringVar()\n        self.ampm_var = tk.StringVar(value=default_ampm)\n        self.hour_cb = ttk.Combobox(\n            self, textvariable=self.hour_var,\n            values=[f\"{i:02d}\" for i in range(1, 13)], width=3",
+        "detail": "OT time-calculate",
+        "documentation": {}
+    },
+    {
+        "label": "HolidayManager",
+        "kind": 6,
+        "importPath": "OT time-calculate",
+        "description": "OT time-calculate",
+        "peekOfCode": "class HolidayManager:\n    def __init__(self):\n        self.holidays = set()  # Store holidays as a set of datetime objects\n    def add_holiday(self, date):\n        \"\"\"Add a holiday date\"\"\"\n        self.holidays.add(date)\n    def remove_holiday(self, date):\n        \"\"\"Remove a holiday date\"\"\"\n        self.holidays.discard(date)\n    def is_holiday(self, date):",
+        "detail": "OT time-calculate",
+        "documentation": {}
+    },
+    {
+        "label": "TimeCardApp",
+        "kind": 6,
+        "importPath": "OT time-calculate",
+        "description": "OT time-calculate",
+        "peekOfCode": "class TimeCardApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"Time Calculator\")\n        try:\n            self.root.iconbitmap(r'C:\\Users\\r123t\\Desktop\\New folder\\time-card.ico')\n        except:\n            pass  # If icon file not found, continue without it\n        self.root.geometry(\"900x700\")\n        self.total_hours = 0.0",
+        "detail": "OT time-calculate",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "OT time-calculate",
+        "description": "OT time-calculate",
+        "peekOfCode": "def main():\n    root = tk.Tk()\n    app = TimeCardApp(root)\n    root.mainloop()\nif __name__ == \"__main__\":\n    main()",
+        "detail": "OT time-calculate",
+        "documentation": {}
+    }
+]

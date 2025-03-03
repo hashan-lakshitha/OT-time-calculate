@@ -232,8 +232,8 @@ class TimeCardApp:
                 # Round down overtime to nearest 15 minutes
                 ot_minutes = (total_minutes // 15) * 15
             else:
-                regular_minutes = min(480, total_minutes)
-                raw_ot_minutes = max(0, total_minutes - 480)
+                regular_minutes = min(465, total_minutes)
+                raw_ot_minutes = max(0, total_minutes - 465)
                 # Apply new overtime rule: only count overtime if the 9th hour is completed
                 if raw_ot_minutes < 60:
                     ot_minutes = 0
